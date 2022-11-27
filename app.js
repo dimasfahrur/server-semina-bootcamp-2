@@ -6,9 +6,8 @@ const logger = require('morgan');
 const app = express();
 
 //router
-const categoriesRouter = require('./app/api/v1/categories/router')
-
-const v1 = '/api/v1/cms'
+const categoriesRouter = require('./app/api/v1/categories/router');
+const v1 = '/api/v1/cms';
 
 app.use(logger('dev'));
 app.use(express.json());
