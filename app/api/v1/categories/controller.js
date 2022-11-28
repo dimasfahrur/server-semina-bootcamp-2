@@ -27,8 +27,7 @@ const index = async (req, res, next) => {
 const find = async (req, res, next) => {
   try {
     const { id } = req.params;
-
-		// mencari categories di MongoDB berdasarkan field _id
+    // mencari categories di MongoDB berdasarkan field _id
     const result = await Categories.findOne({ _id: id });
     // bila result tidak mendapatkan data categories maka akan mereturn response `message: 'Id categories tidak ditemukan'`
     if (!result) {
