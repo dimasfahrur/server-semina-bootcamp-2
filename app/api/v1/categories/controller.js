@@ -43,8 +43,42 @@ const find = async (req, res, next) => {
   }
 };
 
+const update = async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    const { name } = req.body;
+
+    const result = await Categories.findOneAndUpdate(
+      { _id: id },
+      { name },
+      { new: true, runValidators: true },
+    );
+  
+    res.status(200).json({
+      data: result,
+    });
+  } catch (err) {
+    next(err)
+  }
+};
+
+const destroy = async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    
+    const result = await Categories.findByIdAndRemove(id);
+    res.status(200).json({
+      data: result,
+    });
+  } catch (err) {
+    next(err)
+  }
+};
+
 module.exports = {
   index,
   create,
-  find
+  find,
+  update,
+  destroy
 };
