@@ -11,3 +11,5 @@ Ongoing Project
 | | /api/v1/cms/categories/:id | GET | Get one categories by id | Ya |
 | | /api/v1/cms/categories/:id | PUT | Update categories | Ya |
 | | /api/v1/cms/categories/:id | Delete | Delete categories | Ya |
+| Images |
+| | /api/v1/cms/images | POST | Create Image | Ya |
