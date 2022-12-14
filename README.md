@@ -13,3 +13,16 @@ Ongoing Project
 | | /api/v1/cms/categories/:id | Delete | Delete categories | Ya |
 | Images |
 | | /api/v1/cms/images | POST | Create Image | Ya |
+| Talents |
+| | /api/v1/cms/talents | GET | Get all talents | Ya |
+| | /api/v1/cms/talents | POST | Create talents | Ya |
+| | /api/v1/cms/talents/:id | GET | Get one talents by id | Ya |
+| | /api/v1/cms/talents/:id | PUT | Update talents | Ya |
+| | /api/v1/cms/talents/:id | DELETE | Delete talents | Ya |
+| Events |
+| | /api/v1/cms/events | GET | Get all events | Ya |
+| | /api/v1/cms/events | POST | Create events | Ya |
+| | /api/v1/cms/events/:id | GET | Get one event by id | Ya |
+| | /api/v1/cms/events/:id | PUT | Update events | Ya |
+| | /api/v1/cms/events/:id | DELETE | Delete events | Ya |
+| | /api/v1/cms/events/:id/status | PUT | Update status events | Ya |
