@@ -26,3 +26,9 @@ Ongoing Project
 | | /api/v1/cms/events/:id | PUT | Update events | Ya |
 | | /api/v1/cms/events/:id | DELETE | Delete events | Ya |
 | | /api/v1/cms/events/:id/status | PUT | Update status events | Ya |
+| Auth |
+| | /api/v1/auth/signin | POST | Signin | Tidak
+| | /api/v1/cms/organizers | POST | Create admin/ organizer | Ya |
+| Order |
+| | /api/v1/orders | GET | Get all order | Ya |
+| | /api/v1/orders/:id | GET | Get one order by id | Ya |
