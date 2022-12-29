@@ -32,3 +32,23 @@ Ongoing Project
 | Order |
 | | /api/v1/orders | GET | Get all order | Ya |
 | | /api/v1/orders/:id | GET | Get one order by id | Ya |
+| Payment |
+| | /api/v1/cms/payments | GET | Get all payments | Ya |
+| | /api/v1/cms/payments | POST | Create payments | Ya |
+| | /api/v1/cms/payments/:id | GET | Get one payments by id | Ya |
+| | /api/v1/cms/payments/:id | Update payments | Ya |
+| | /api/v1/cms/payments/:id | Delete payments | Ya |
+| Ticket Categories |
+| | /api/v1/cms/tickets-categories | GET | Get all ticket categories | Ya |
+| | /api/v1/cms/tickets-categories | POST | Create ticket categories | Ya |
+| | /api/v1/cms/tickets-categories/:id | GET | Get one ticket categories | Ya |
+| | /api/v1/cms/tickets-categories/:id | PUT | Update ticket categories | Ya |
+| | /api/v1/cms/tickets-categories/:id | Delete | Delete ticket categories | Ya |
+| Participants |
+| | /api/v1/events | GET | Get all events | Tidak |
+| | /api/v1/events/:id | GET | Get detail events by id | Tidak |
+| | /api/v1/events/:id/checkout | POST | Checkout events | Ya |
+| | /api/v1/dashboard | GET | Get dashboard | Ya |
+| | /api/v1/dashboard/:id | GET | Get detail dashboard by id | Ya |
+| | /api/v1/participant/auth/signin | POST | signin | Tidak |
+| | /api/v1/participant/auth/signup | POST | signup | Tidak |
