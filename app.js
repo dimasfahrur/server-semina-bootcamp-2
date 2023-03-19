@@ -15,6 +15,7 @@ const organizersRouter = require('./app/api/v1/organizers/router');
 const authCMSRouter = require('./app/api/v1/auth/router');
 const ordersRouter = require('./app/api/v1/order/router');
 const participantsRouter = require('./app/api/v1/participants/router');
+const paymentsRouter = require('./app/api/v1/payments/router');
 
 
 
@@ -41,6 +42,7 @@ app.use(`${v1}/cms`, eventsRouter);
 app.use(`${v1}/cms`, organizersRouter);
 app.use(`${v1}/cms`, authCMSRouter);
 app.use(`${v1}/cms`, ordersRouter);
+app.use(`${v1}/cms`, paymentsRouter);
 app.use(`${v1}`, participantsRouter);
 
 //middlewares

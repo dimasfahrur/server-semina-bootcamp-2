@@ -4,7 +4,8 @@ const {
   signinParticipant,
   getAllEvents,
   getAllOrders,
-  getOneEvent
+  getOneEvent,
+  checkoutOrder,
 } = require('../../../services/mongoose/participants');
 
 const { StatusCodes } = require('http-status-codes');
@@ -82,6 +83,18 @@ const getDashboard = async (req, res, next) => {
   }
 };
 
+const checkout = async (req, res, next) => {
+  try {
+    const result = await checkoutOrder(req);
+
+    res.status(StatusCodes.CREATED).json({
+      data: result,
+    });
+  } catch (err) {
+    next(err);
+  }
+};
+
 module.exports = {
   signup,
   activParticipant,
@@ -89,4 +102,5 @@ module.exports = {
   getAllLandingPage,
   getDetailLandingPage,
   getDashboard,
+  checkout,
 };

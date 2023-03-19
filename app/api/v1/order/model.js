@@ -124,7 +124,7 @@ const orderSchema = new mongoose.Schema(
         ref: 'Organizer',
         required: true,
       },
-    }
+    },
   },
   { timestamps: true }
 );
